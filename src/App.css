@@ -1,0 +1,87 @@
+html,
+body {
+  min-height: 100%;
+  background-color: white;
+}
+
+.bmi-app {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.bmi-app__form-header {
+  margin-top: 20px;
+}
+
+.bmi-app__form-header h1 {
+  font-size: 20px;
+  color: #2b2f40;
+  margin: 0;
+}
+
+.bmi-app__form-header p {
+  font-size: 12px;
+  color: #545d7d;
+}
+
+.bmi-app__form-body {
+  display: flex;
+}
+
+.bmi-app__form-group {
+  flex: 1;
+  margin-top: 35px;
+}
+
+.bmi-app__form-group:first-child {
+  margin-right: 20px;
+}
+
+.bmi-app__form-group h2 {
+  font-size: 16px;
+  color: #2b2f40;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.bmi-app__form-lb-input,
+.bmi-app__form-ft-input,
+.bmi-app__form-in-input {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  color: #545d7d;
+  margin-top: 5px;
+}
+
+.bmi-app__display {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  background: #9aa8b3;
+  border-radius: 8px;
+  color: white;
+  padding: 8px 0;
+  width: 200px;
+}
+
+.bmi-app__display.bmi-app__display--danger,
+.bmi-app__display.bmi-app__display--success,
+.bmi-app__display.bmi-app__display--warning {
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #c90000;
+}
+
+.bmi-app__display.bmi-app__display--success {
+  display: flex;
+  background-color: #00b4d8;
+}
+
+.bmi-app__display.bmi-app__display--warning {
+  display: flex;
+  background-color: #edc00d;
+}
